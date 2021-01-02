@@ -297,9 +297,10 @@ main .what-we-do ul li {
     list-style: none;
     margin-left: 1em;
     font-weight: 100;
+    padding-left: 0.3em;
 }
 
-main .what-we-do ul li:before {
+main .what-we-do ul li::marker {
     content: '\2714\0020';
     color: #078dc8;
     display: inline-block;
