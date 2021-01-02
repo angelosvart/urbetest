@@ -77,6 +77,7 @@ export default class FormControl {
         for (const query in this.querySelectors) {
             if (this.querySelectors[query].classList.contains("error")) {
                 const li = document.createElement("li");
+                
                 if (query === "name") {
                     li.innerHTML = `Por favor introduzca su nombre.`;
                 }
@@ -113,6 +114,10 @@ export default class FormControl {
                 }
             }
         }
+
+        document.addEventListener("click", () => {
+            errorContainer.style.display = "none";
+        });
 
         if (this.name && this.surname && this.phone && this.legal && this.email) {
             this.comment = document.querySelector("#contact-form #comment").value;
