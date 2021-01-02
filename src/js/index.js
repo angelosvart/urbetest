@@ -11,7 +11,7 @@ import FormControl from './FormControl';
 
     //Arrow down scroll effect
     arrowDown.addEventListener("click", () => {
-        anchor.scrollIntoView();
+        anchor.scrollIntoView({behavior: "smooth"});
     });
 
     //Mobile menu events to show/hide
