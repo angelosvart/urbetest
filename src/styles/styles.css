@@ -294,16 +294,14 @@ main .what-we-do ul {
 main .what-we-do ul li {
     color: #ffffff;
     margin-bottom: 0.5em;
-    list-style: none;
     margin-left: 1em;
     font-weight: 100;
     padding-left: 0.3em;
 }
 
 main .what-we-do ul li::marker {
-    content: '\2714\0020';
+    content: "\2714";
     color: #078dc8;
-    display: inline-block;
     width: 1.2em;
     margin-left: -1.2em;
 }
