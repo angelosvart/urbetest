@@ -121,9 +121,16 @@ export default class FormControl {
                 errorContainer.removeChild(errorContainer.firstChild);
             }
 
+            this.querySelectors.name.disabled = true;
+            this.querySelectors.surname.disabled = true;
+            this.querySelectors.phone.disabled = true;
+            this.querySelectors.legal.disabled = true;
+            this.querySelectors.email.disabled = true;
+            document.querySelector("#contact-form #comment").disabled  = true;
+
             const submitBtn = document.querySelector("#contact-form button");
-            const spinner = document.createElement("div");
             submitBtn.disabled = true;
+            const spinner = document.createElement("div");
             spinner.className = "spinner";
             submitBtn.replaceChild(spinner,submitBtn.childNodes[0]);
             this._commit();
